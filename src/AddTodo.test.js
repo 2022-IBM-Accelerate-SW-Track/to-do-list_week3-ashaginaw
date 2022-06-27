@@ -48,7 +48,7 @@ test('test that App component doesn\'t render dupicate Task', () => { //finished
   expect(check).toBeInTheDocument();
  });
 
- test('test that App component doesn\'t add a task without due date', () => {
+ test('test that App component doesn\'t add a task without due date', () => { //finished
   render(<App />);
   const inputTask = screen.getByRole('textbox', {name: /Add New Item/i});
   const inputDate = screen.getByPlaceholderText("mm/dd/yyyy");
@@ -79,7 +79,7 @@ test('test that App component doesn\'t render dupicate Task', () => { //finished
    });
 
 
- test('test that App component renders different colors for past due events', () => {
+ test('test that App component renders different colors for past due events', () => { //finished
   render(<App />);
   const inputTask = screen.getByRole('textbox', {name: /Add New Item/i});
   const inputDate = screen.getByPlaceholderText("mm/dd/yyyy");
